@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+header a {
+  margin-right: 20px;
+  text-decoration: inherit;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header a:visited {
+  text-decoration: none;
+}
+
+.header__right {
+  display: flex;
+  margin-left: auto;
+  min-width: 13vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__right .header__apps {
+  margin-right: 10px;
+}
+
+/* Main Body */
+
+.mainBody {
+  flex: 1;
+  display: flex;
+  margin-top: 12%;
+  flex-direction: column;
+}
+
+.mainBody img {
+  object-fit: contain;
+  height: 100px;
+}
+
+/* search */
+.search__input {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 560px;
+}
+
+.search__input input {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+
+.search__input .material-icons {
+  color: gray;
+}
+
+.search__buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.search__buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.search__buttons button:hover {
+  border-radius: 4px;
+  outline: 1px solid rgb(218, 220, 224);
+}
+
+/* Google offered text */
+#container-go {
+  width: 580px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+small {
+  display: block;
+  margin: 10px 0 0 0;
+  font-size: 13px;
+}
+
+small a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background: #eee;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 15px;
+}
+
+footer nav {
+  padding: 20px;
+}
+
+footer .uno {
+  border-bottom: 1px solid #dadce0;
+}
+
+footer nav ul li {
+  display: inline;
+  padding-right: 10px;
+}
+
+footer nav ul {
+  float: left;
+}
+
+footer nav ul a {
+  text-decoration: none;
+  color: #70757a;
+}
+
+footer nav ul.right-links {
+  float: right;
+  text-align: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
